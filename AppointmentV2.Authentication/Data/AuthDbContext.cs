@@ -9,10 +9,7 @@ namespace AppointmentV2.Authentication.Data
 {
     public class AuthDbContext : IdentityDbContext<AppUser>
     {
-        // Enable-Migrations -ContextTypeName AppointmentV2.Authentication.Data.AuthDbContext -MigrationsDirectory Data\Migrations
-        // Add-Migration -ConfigurationTypeName AppointmentV2.Authentication.Data.Migrations.Configuration Initial
-        // Update-Database -ConfigurationTypeName AppointmentV2.Authentication.Data.Migrations.Configuration
-        // Update-Database -ConfigurationTypeName AppointmentV2.Authentication.Data.Migrations.Configuration -TargetMigration:0
+        
         public AuthDbContext() : base("AuthenticationString")
         {
 
